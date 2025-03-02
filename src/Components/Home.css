@@ -1,70 +1,29 @@
-/* Home Page Styling */
-.home-container {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 20px;
-  background: #f8f9fc;
-}
-
-.title {
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.summary-section {
+/* Home.css */
+.home-layout {
   display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.home-container {
+  margin-left: 250px;  /* Adjust this based on your sidebar width */
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.home-welcome {
   margin-bottom: 20px;
 }
 
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in-out;
-  flex: 1;
+.home-welcome-text {
+  font-size: 2rem;
+  color: #2e7d32; /* Adjust color if needed */
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.home-total-amount {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
-.large-card {
-  flex: 2;
-  text-align: center;
-}
-
-h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #2e7d32;
-}
-
-.amount {
-  font-size: 28px;
-  font-weight: bold;
-  color: #388e3c;
-}
-
-.no-data {
-  color: gray;
-  font-style: italic;
-}
-
-.payment-item, ul li {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-
-.bottom-section {
-  display: flex;
-  gap: 20px;
+.home-edit-btn {
+  margin-top: 20px;
 }
