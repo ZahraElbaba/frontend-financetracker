@@ -7,35 +7,13 @@ import { Button, Typography, Container } from '@mui/material';
 const Home = () => {
   const [userData, setUserData] = useState(null);
 
-  useEffect(() => {
-    const fetchHomeData = async () => {
-      const token = localStorage.getItem('authToken');
-      if (!token) {
-        window.location.href = '/login';
-        return;
-      }
-      try {
-        const response = await axios.get('http://localhost:4000/api/home', {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-        console.log('User Data:', response.data); // Log to check response data
-        setUserData(response.data);
-      } catch (error) {
-        console.error('Error fetching home data:', error);
-        window.location.href = '/login'; // Redirect to login on error
-      }
-    };
-
-    fetchHomeData();
-  }, []);
-
   const handleEdit = () => {
-    // Implement edit functionality if needed
+    alert('Edit feature coming soon!');
   };
 
   return (
     <div className="home-layout">
-      <Sidebar /> {/* Sidebar added here */}
+      <Sidebar />
       <Container className="home-container">
         {userData ? (
           <div className="home-welcome">
