@@ -1,3 +1,4 @@
+/* Sidebar Styles */
 .sidebar {
   width: 250px;
   height: 100vh;
@@ -5,10 +6,14 @@
   color: white;
   position: fixed;
   padding: 20px;
+  top: 0;
+  left: 0;
+  z-index: 100; /* Keep sidebar on top of body content */
 }
 
 .sidebar h2 {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar ul {

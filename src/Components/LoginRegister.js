@@ -12,7 +12,7 @@ const LoginRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
-    const endpoint = isLogin ? "/api/login" : "/api/register";
+    const endpoint = isLogin ? "/api/auth/login" : "/api/auth/register";
 
     try {
       const { data } = await axios.post(`http://localhost:4000${endpoint}`, {

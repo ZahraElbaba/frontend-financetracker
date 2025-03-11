@@ -1,29 +1,108 @@
-/* Home.css */
+/* Home Layout */
 .home-layout {
   display: flex;
   min-height: 100vh;
+  background-color: #e8f5e9; /* Light green */
 }
 
+/* Main content container */
 .home-container {
-  margin-left: 250px;  /* Adjust this based on your sidebar width */
+  margin-left: 270px;
+  width: calc(100% - 270px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  flex-grow: 1;
 }
 
-.home-welcome {
+/* Top Section: Total Amount & Payments */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
   margin-bottom: 20px;
 }
 
-.home-welcome-text {
-  font-size: 2rem;
-  color: #2e7d32; /* Adjust color if needed */
+/* Total Amount Card */
+.total-amount-card {
+  padding: 30px;
+  width: 48%;
+  background-color: #c8e6c9;
+  border-left: 6px solid #2e7d32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.home-total-amount {
-  font-size: 1.5rem;
+/* Sticky Note for Payments */
+.sticky-note {
+  padding: 30px;
+  width: 48%;
+  background-color: #FFEB8F;
+  border-left: 6px solid #66bb6a;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.buttons-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #388e3c !important;
+  color: white !important;
+}
+
+button:hover {
+  background-color: #2e7d32 !important;
+}
+
+.subtract-btn {
+  background-color: #d32f2f !important;
+}
+
+.subtract-btn:hover {
+  background-color: #b71c1c !important;
+}
+
+/* Payment List */
+.payment-list {
   margin-top: 10px;
 }
 
-.home-edit-btn {
-  margin-top: 20px;
+.payment-item {
+  padding: 5px 10px;
+  background-color: #81c784;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #d32f2f !important;
+  color: white !important;
+  border-radius: 50%;
+  padding: 5px 8px;
+  min-width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Income Graph */
+.income-graph {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
